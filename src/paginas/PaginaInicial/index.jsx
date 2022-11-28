@@ -3,6 +3,8 @@ import Cabecalho from "../../componentes/Cabecalho";
 import Menu from "../../componentes/Menu";
 import Banner from "../../componentes/Banner";
 import Galeria from "../../componentes/Galeria";
+import Populares from "../../componentes/Populares";
+import Rodape from "../../componentes/Rodape";
 
 export default function PaginaInicial() {
   return (
@@ -16,10 +18,12 @@ export default function PaginaInicial() {
             <Banner />
           </div>
         </section>
+        <div className={styles.galeria}>
+          <Galeria />
+          <Populares />
+        </div>
       </main>
-      <div className={styles.galeria}> 
-        <Galeria  />
-      </div>
+      <Rodape />
     </>
   );
 }
